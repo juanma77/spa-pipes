@@ -26,20 +26,38 @@
           <!-- Corta las primeras 3 posiciones del nombre -->
           <td>{{ nombre }}</td>
           <td>slice: 3</td>
-          <td>{{ nombre | slice:3}}</td>
+          <td>{{ nombre | slice:3 }}</td>
         </tr>
         <tr>
           <!-- Mostrar de la posición adelante de cero hasta la tres-->
           <td>{{ nombre }}</td>
           <td>slice:0:3</td>
-          <td>{{ nombre | slice:0:3}}</td>
+          <td>{{ nombre | slice:0:3 }}</td>
         </tr>   
         <tr>
           <!-- Mostrar de la posición adelante de la 1 a la 5-->
           <td>{{ arreglo }}</td>
           <td>slice:1:5</td>
-          <td>{{ arreglo | slice:1:5}}</td>
-        </tr>          
+          <td>{{ arreglo | slice:1:5 }}</td>
+        </tr> 
+        <tr>
+          <!-- Quiero un dígito y ningún decimal-->
+          <td>{{ PI }}</td>
+          <td>number number:'1.0-0'</td>
+          <td>{{ PI | number:'1.0-0' }}</td>
+        </tr> 
+        <tr>
+          <!-- Quiero tres posiciones enteras-->
+          <td>{{ PI }}</td>
+          <td>number number:'3.0-0'</td>
+          <td>{{ PI | number:'3.0-0' }}</td>
+        </tr>
+        <tr>
+          <!-- Quiero toda la parte entera pero sólo dos decimales-->
+          <td>{{ PI }}</td>
+          <td>number</td>
+          <td>{{ PI | number:'.0-2' }}</td>
+        </tr>  
       </tbody>
     </table>
     <!-- Mostrar de la posición 5 en adelante hasta la 20 -->
