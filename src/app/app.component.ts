@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'spa-pipes';
+
+  public nombre: string = 'Capitán América'; 
 }
