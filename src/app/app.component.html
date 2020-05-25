@@ -67,9 +67,34 @@
         <tr>
           <!-- Quiero dos posiciones enteras y dos decimales-->
           <td>{{ porcentaje }}</td>
-          <td>percent</td>
-          <td>{{ porcentaje | percent:'2.2-2'}}</td>
-        </tr>  
+          <td>percent percent:'2.2-2'</td>
+          <td>{{ porcentaje | percent:'2.2-2' }}</td>
+        </tr> 
+        
+        <tr>
+          <!-- Mostrar los datos con formato de moneda-->
+          <td>{{ salario }}</td>
+          <td>currency</td>
+          <td>{{ salario | currency }}</td>
+        </tr>
+        <tr>
+          <!-- Mostrar los datos con formato de euro-->
+          <td>{{ salario }}</td>
+          <td>currency:'EUR'</td>
+          <td>{{ salario | currency:'EUR' }}</td>
+        </tr>
+        <tr>
+          <!-- Mostrar los datos con formato de dólares canadienses con toda la parte entera y ningún decimal; el "symbol" es para que la moneda se muestre como tal en lugar del símbolo-->
+          <td>{{ salario }}</td>
+          <td>currency:'CAD$':'symbol':'.0-0'</td>
+          <td>{{ salario | currency:'CAD$':'symbol':'.0-0' }}</td>
+        </tr>
+        <tr>
+          <!--Mostrar los datos con formato de dólares canadieneses con toda la parte entera y ningún decimal; el "symbol-narrow" es para que aparezca el símbolo de dólar ($) -->
+          <td>{{ salario }}</td>
+          <td>currency:'CAD'</td>
+          <td>{{ salario | currency:'CAD':'symbol-narrow':'.0-0' }}</td>
+        </tr>
       </tbody>
     </table>
     <!-- Mostrar de la posición 5 en adelante hasta la 20 -->
