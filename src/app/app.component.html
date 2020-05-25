@@ -55,8 +55,20 @@
         <tr>
           <!-- Quiero toda la parte entera pero sólo dos decimales-->
           <td>{{ PI }}</td>
-          <td>number</td>
+          <td>number number:'.0-2'</td>
           <td>{{ PI | number:'.0-2' }}</td>
+        </tr>
+        <tr>
+          <!-- Transformar la cantidad a porcentaje-->
+          <td>{{ porcentaje }}</td>
+          <td>percent</td>
+          <td>{{ porcentaje | percent }}</td>
+        </tr> 
+        <tr>
+          <!-- Quiero dos posiciones enteras y dos decimales-->
+          <td>{{ porcentaje }}</td>
+          <td>percent</td>
+          <td>{{ porcentaje | percent:'2.2-2'}}</td>
         </tr>  
       </tbody>
     </table>
