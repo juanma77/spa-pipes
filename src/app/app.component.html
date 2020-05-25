@@ -21,8 +21,31 @@
           <td>{{ nombre }}</td>
           <td>lowercase</td>
           <td>{{ nombre | lowercase }}</td>
-        </tr>    
+        </tr>
+        <tr>
+          <!-- Corta las primeras 3 posiciones del nombre -->
+          <td>{{ nombre }}</td>
+          <td>slice: 3</td>
+          <td>{{ nombre | slice:3}}</td>
+        </tr>
+        <tr>
+          <!-- Mostrar de la posición adelante de cero hasta la tres-->
+          <td>{{ nombre }}</td>
+          <td>slice:0:3</td>
+          <td>{{ nombre | slice:0:3}}</td>
+        </tr>   
+        <tr>
+          <!-- Mostrar de la posición adelante de la 1 a la 5-->
+          <td>{{ arreglo }}</td>
+          <td>slice:1:5</td>
+          <td>{{ arreglo | slice:1:5}}</td>
+        </tr>          
       </tbody>
     </table>
+    <!-- Mostrar de la posición 5 en adelante hasta la 20 -->
+    <h4>Slice</h4>
+    <ul>
+      <li *ngFor="let item of arreglo | slice:5:20">{{ item }}</li>
+    </ul>
   </div>
 </div>
