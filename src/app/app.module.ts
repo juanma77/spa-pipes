@@ -5,8 +5,11 @@ import { AppComponent } from './app.component';
 
 import { registerLocaleData } from '@angular/common';
 import localEs from '@angular/common/locales/es';
+import localFr from '@angular/common/locales/fr';
 
 registerLocaleData(localEs); 
+registerLocaleData(localFr);
+
 
 @NgModule({
   declarations: [
@@ -17,6 +20,7 @@ registerLocaleData(localEs);
   ],
   providers: [
 
+    // Definimos el español como el idioma por defecto de la aplicación 
     {
       provide: LOCALE_ID,
       useValue: 'es'

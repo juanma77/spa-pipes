@@ -39,4 +39,6 @@ export class AppComponent {
   });
 
   public fecha: Date = new Date();
+
+  public idioma: string = 'en';
 }
