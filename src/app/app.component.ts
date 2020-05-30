@@ -27,4 +27,14 @@ export class AppComponent {
       casa: 20
     }
   }
+
+  // Esta promesa hace que se imprima "Llego la data cada 4500 ms, es decir, cada 4 segundos y medio"
+  valorPromesa = new Promise<string>(( resolve ) =>{
+
+    setTimeout(() =>{
+      resolve('Llegó la data');
+      console.log("Promesa resuelta");
+    }, 4500);
+
+  });
 }

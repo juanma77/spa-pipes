@@ -95,6 +95,12 @@
           <td>currency:'CAD'</td>
           <td>{{ salario | currency:'CAD':'symbol-narrow':'.0-0' }}</td>
         </tr>
+        <tr>
+          <!--Mostrar los datos de la promesa -->
+          <td>{{ valorPromesa }}</td>
+          <td>async</td>
+          <td>{{ valorPromesa | async }}</td>
+        </tr>
       </tbody>
     </table>
     <!-- Mostrar de la posición 5 en adelante hasta la 20 -->
