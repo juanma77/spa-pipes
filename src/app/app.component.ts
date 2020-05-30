@@ -37,4 +37,6 @@ export class AppComponent {
     }, 4500);
 
   });
+
+  public fecha: Date = new Date();
 }

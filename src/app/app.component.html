@@ -101,6 +101,30 @@
           <td>async</td>
           <td>{{ valorPromesa | async }}</td>
         </tr>
+        <tr>
+          <!--Mostrar la fecha con argumento medium-->
+          <td>{{ fecha }}</td>
+          <td>date</td>
+          <td>{{ fecha | date }}</td>
+        </tr>
+        <tr>
+          <!--Mostrar la fecha con argumento medium-->
+          <td>{{ fecha }}</td>
+          <td>date:'medium'</td>
+          <td>{{ fecha | date:'medium' }}</td>
+        </tr>
+        <tr>
+          <!--Mostrar la fecha con argumento short-->
+          <td>{{ fecha }}</td>
+          <td>date:'short'</td>
+          <td>{{ fecha | date:'short' }}</td>
+        </tr>
+        <tr>
+          <!--Mostrar la fecha personalizada-->
+          <td>{{ fecha }}</td>
+          <td>date:'MMMM - dd'</td>
+          <td>{{ fecha | date:'MMMM - dd' }}</td>
+        </tr>
       </tbody>
     </table>
     <!-- Mostrar de la posición 5 en adelante hasta la 20 -->
