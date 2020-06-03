@@ -5,8 +5,9 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class HidePasswordPipe implements PipeTransform {
 
-  transform(value: any, ...args: any[]): any {
-    return null;
+  transform(value: string, mostrar: boolean = true): string {
+    // Lo que está después del ? es la condición verdadera, lo que está luego de los : es lo que hará en caso contrario; repeat es para repetir elementos de acuerdo al largo que tenga el value.length
+    return (mostrar) ? '*'.repeat(value.length) : value;  
   }
 
 }

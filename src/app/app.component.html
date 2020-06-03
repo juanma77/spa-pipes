@@ -151,11 +151,11 @@
         <tr>
           <!--Pipe personalizado para ocultar y mostrar contraseña-->
           <td>{{ miNombre }}</td>
-          <td>personalizado password
+          <td>personalizado hide-password
             <br>
-            <button class="btn btn-outline-primary">Activar/Desactivar</button>
+            <button (click)="activar = !activar" class="btn btn-outline-primary">Activar/Desactivar</button>
           </td>
-          <td>{{ miNombre }}</td>
+          <td>{{ miNombre | hidePassword:activar }}</td>
         </tr>
       </tbody>
     </table>
