@@ -44,4 +44,7 @@ export class AppComponent {
 
   // Para pipe personalizado
   public miNombre: string = 'jUAn maNuEl lOpEz sAnTana';
+
+  // DOM seguro
+  public videoUrl: string = 'www.youtube.com/embed/eTa1jHk1Lxc';
 }
