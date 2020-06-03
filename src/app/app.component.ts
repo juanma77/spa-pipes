@@ -47,4 +47,7 @@ export class AppComponent {
 
   // DOM seguro
   public videoUrl: string = 'www.youtube.com/embed/eTa1jHk1Lxc';
+
+  // Para mostrar/ocultar contraseña
+  public activar: boolean = true;
 }

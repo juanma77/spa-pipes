@@ -125,52 +125,38 @@
           <td>date:'MMMM - dd'</td>
           <td>{{ fecha | date:'MMMM - dd' }}</td>
         </tr>
-
-
         <tr>
           <!--Mostrar la fecha en francés-->
           <td>{{ fecha }}</td>
           <td>date:'MMMM - dd':'':'fr'</td>
           <td>{{ fecha | date:'MMMM - dd':'':'fr' }}</td>
         </tr>
-
-
-
-
         <tr>
           <!--Mostrar la fecha con español, inglés y francés-->
           <td>{{ fecha }}</td>
-
-
-
-
           <td>date:'MMMM - dd':'':'{{ idioma }}'
             <br>
             <button (click)="idioma = 'es'" class="mr-1 btn btn-primary">Español</button>
             <button (click)="idioma = 'en'" class="mr-1 btn btn-secondary">Inglés</button>
             <button (click)="idioma = 'fr'" class="mr-1 btn btn-success">Francés</button>
           </td>
-
-
-
           <td>{{ fecha | date:'MMMM - dd':'':idioma }}</td>
-
-
-
         </tr>
-
-
         <tr>
-          <!--Pipe personalizado-->
+          <!--Pipe personalizado para capitaizar palabras-->
           <td>{{ miNombre }}</td>
           <td>personalizado capitalized</td>
           <td>{{ miNombre | capitalized:true }}</td>
         </tr>
-
-
-
-
-
+        <tr>
+          <!--Pipe personalizado para ocultar y mostrar contraseña-->
+          <td>{{ miNombre }}</td>
+          <td>personalizado password
+            <br>
+            <button class="btn btn-outline-primary">Activar/Desactivar</button>
+          </td>
+          <td>{{ miNombre }}</td>
+        </tr>
       </tbody>
     </table>
     <!-- Mostrar de la posición 5 en adelante hasta la 20 -->
@@ -187,10 +173,8 @@
     </div>
   </div>
 </div>
-
 <h3 class="mt-4">DOM Seguro</h3>
 <hr>
-
 <div class="row">
   <div class="col">
     <!-- <iframe [src]="videoUrl | secureDom" width="560" height="315" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
